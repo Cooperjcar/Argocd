@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: Bootstrap
-    repoURL: https://github.com/Cooperjcar/Ameretto/Operations/K8s-Bootstrapper-New
+    repoURL: https://github.com/Cooperjcar/Argocd
     targetRevision: HEAD
   syncPolicy:
     automated:

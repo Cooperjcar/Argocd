@@ -9,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: bootstrap/bootstrap-resources
-    repoURL: https://github.com/cooperjcar/Ameretto/Operations/K8s-Bootstrapper-New
+    path: Bootstrap/bootstrap-resources
+    repoURL: https://github.com/cooperjcar/Argocd
     targetRevision: HEAD
     helm:
       parameters:

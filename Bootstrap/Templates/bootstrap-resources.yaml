@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: Bootstrap/bootstrap-resources
-    repoURL: https://github.com/cooperjcar/Argocd
+    repoURL: https://github.com/Cooperjcar/Argocd
     targetRevision: HEAD
     helm:
       parameters:

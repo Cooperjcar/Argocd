@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootstrap
+  name: bootstrap-resources
   namespace: argocd
 spec:
   destination:
@@ -9,9 +9,13 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: Bootstrap
+    path: bootstrap/bootstrap-resources
     repoURL: https://github.com/Cooperjcar/Argocd
     targetRevision: HEAD
+    helm:
+      parameters:
+        - name: domain
+          value: {{ .Values.domain }}
   syncPolicy:
     automated:
       selfHeal: true

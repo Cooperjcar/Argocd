@@ -10,7 +10,7 @@ spec:
  project: default
  source:
   repoURL: 'https://github.com/hivenetes/bots'
-  path: .
+  path: chart
   targetRevision: HEAD
   helm:
     valueFiles:

@@ -1,5 +1,5 @@
 bots:
-  enable: false
+  enable: true
 argocd:
   enable: true
 domain: interserver-cxxper.xyz

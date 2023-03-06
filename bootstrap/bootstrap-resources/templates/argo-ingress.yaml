@@ -21,7 +21,6 @@ spec:
                 name: argocd-server
                 port:
                   number: 80
-  ingressClassName: traefik
   tls:
     - secretName: argocd-secret-tls
       hosts:

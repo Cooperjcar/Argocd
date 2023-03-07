@@ -1,0 +1,25 @@
+{{- if .Values.searxng.enable }}
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: searxng
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "-2"
+spec:
+  destination:
+    namespace: searxng
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    chart: searxng
+    helm:
+      repoURL: https://charts.searxng.org/
+      chart: searxng
+      version: 2.2.0
+  syncPolicy:
+    automated:
+      prune: true
+    syncOptions:
+    - CreateNamespace=true
+{{- end }}

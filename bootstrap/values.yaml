@@ -19,3 +19,6 @@ traefik:
   enable: true  
 trivy:
   enable: false
+searxng:
+  enable: true
+  

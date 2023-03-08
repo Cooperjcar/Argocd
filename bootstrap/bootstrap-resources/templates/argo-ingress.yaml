@@ -27,3 +27,4 @@ spec:
       hosts:
       # Add domain
         - argocd.interserver-cxxper.xyz
+{{- end }}

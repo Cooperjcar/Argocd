@@ -5,8 +5,8 @@ metadata:
   name: cloudflare-issuer
 spec:
   acme:
-    email: argocd@interserver-cxxper.xyz
-    server: https://acme-v02.api.letsencrypt.org/directory
+    email: cooper@cconsolidated.com.au
+    server: https://acme-staging-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: cloudflare-issuer-account-key
     solvers:

@@ -27,4 +27,19 @@ spec:
       hosts:
       # Add domain
         - argocd.interserver-cxxper.xyz
+
+
+###### CERTIFICATE ########
+  apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: argocd-server
+  namespace: argocd
+spec:
+  secretName: argocd-secret-tls
+  dnsNames:
+  - argocd.interserver-cxxper.xyz
+  issuerRef:
+    name: cloudflare-issuer
+    kind: ClusterIssuer
 {{- end }}

@@ -24,5 +24,6 @@ spec:
   ingressClassName: traefik
   tls:
     - secretName: argocd-secret-tls
-      hosts: argocd.interserver-cxxper.xyz
+      hosts: 
+      - argocd.interserver-cxxper.xyz
 {{- end }}

@@ -26,4 +26,20 @@ spec:
     - secretName: argocd-secret-tls
       hosts: 
       - argocd.interserver-cxxper.xyz
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: argocd-secret-tls
+  namespace: argocd
+spec:
+  secretName: argocd-secret-tls
+  duration: 2160h # 90 days
+  renewBefore: 360h # 15 days
+  commonName: argocd.interserver-cxxper.xyz
+  dnsNames:
+    - argocd.interserver-cxxper.xyz
+  issuerRef:
+    name: cloudflare-issuer
+    kind: ClusterIssuer
 {{- end }}

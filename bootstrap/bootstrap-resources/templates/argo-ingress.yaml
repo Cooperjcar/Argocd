@@ -11,7 +11,7 @@ metadata:
 spec:
   rules:
   # Add domain
-    - host: argocd.{{ .Values.domain }}
+    - host: argocd.interserver-cxxper.xyz
       http:
         paths:
           - path: /
@@ -26,5 +26,5 @@ spec:
     - secretName: argocd-secret-tls
       hosts:
       # Add domain
-        - argocd.{{ .Values.domain }}
+        - argocd.interserver-cxxper.xyz
 {{- end }}

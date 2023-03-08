@@ -20,5 +20,4 @@ traefik:
 trivy:
   enable: false
 searxng:
-  enable: true
-  
+  enable: false

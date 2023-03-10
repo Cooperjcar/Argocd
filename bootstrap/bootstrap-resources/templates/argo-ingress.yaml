@@ -7,7 +7,7 @@ metadata:
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
     traefik.ingress.kubernetes.io/router.tls: "true"
-    cert-manager.io/cluster-issuer: cloudflare-issuer
+    cert-manager.io/cluster-issuer: staging-issuer
 spec:
   ingressClassName: traefik
   tls:

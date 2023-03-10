@@ -2,4 +2,4 @@ bots:
   enable: false
 argocd:
   enable: true
-domain: *interserver-cxxper.xyz
+domain: 

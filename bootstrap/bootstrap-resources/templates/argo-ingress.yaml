@@ -13,7 +13,7 @@ spec:
   tls:
   - hosts:
     - argocd.{{ .Values.domain }}
-    secretName: argocd-secret-tls
+    secretName: argocd-secret-tls-prod
   rules:
   - host: argocd.{{ .Values.domain }}
     http:
